@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page Simples</title>
+    <title>Curso Git e GitHub - Prático e Objetivo</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,11 +11,12 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="logo">MinhaLand</div>
+            <div class="logo">🚀 GitMaster</div>
             <div class="nav-links">
-                <a href="#">Início</a>
-                <a href="#">Recursos</a>
-                <a href="#">Contato</a>
+                <a href="#definicoes">Definições</a>
+                <a href="#instalacao">Instalação</a>
+                <a href="#github-online">GitHub Online</a>
+                <a href="#vscode">VS Code</a>
             </div>
         </div>
     </header>
@@ -23,53 +24,173 @@
     <!-- Hero -->
     <section class="hero">
         <div class="container">
-            <h1>Transforme seu <span>futuro</span> agora</h1>
+            <h1>Git e GitHub <span>do zero ao deploy</span></h1>
             <p>
-                Crie uma presença online poderosa com nossa plataforma
-                intuitiva. Comece a construir sua jornada hoje mesmo.
+                Aprenda de forma prática e objetiva a usar Git e GitHub para 
+                versionar seus projetos e colaborar com equipes.
             </p>
-            <a href="#" class="btn-primary">Começar agora</a>
+            <a href="#definicoes" class="btn-primary">Começar agora</a>
         </div>
     </section>
 
-    <!-- Features --> 
-    <section class="features">
+    <!-- Definições -->
+    <section id="definicoes" class="section">
         <div class="container">
-            <div class="feature-item">
-                <div class="feature-icon">🚀</div>
-                <h3>Rápido e leve</h3>
-                <p>Carregamento otimizado para uma experiência fluida em qualquer dispositivo.</p>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon">🎨</div>
-                <h3>Design moderno</h3>
-                <p>Layouts pensados para causar uma ótima primeira impressão.</p>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon">🔒</div>
-                <h3>Seguro e confiável</h3>
-                <p>Proteção de dados e estabilidade para você e seus clientes.</p>
+            <h2 class="section-title">📖 O que é Git e GitHub?</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>🔷 Git</h3>
+                    <p>
+                        Sistema de controle de versão distribuído criado por Linus Torvalds em 2005.
+                        Permite que desenvolvedores acompanhem mudanças no código, 
+                        revertam versões e trabalhem em equipe de forma eficiente.
+                    </p>
+                    <ul>
+                        <li>✅ Versionamento local</li>
+                        <li>✅ Branching e merging</li>
+                        <li>✅ Rápido e leve</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🔶 GitHub</h3>
+                    <p>
+                        Plataforma de hospedagem de código que utiliza Git como base.
+                        Além de armazenar repositórios, oferece ferramentas de colaboração,
+                        como issues, pull requests e actions.
+                    </p>
+                    <ul>
+                        <li>✅ Repositórios remotos</li>
+                        <li>✅ Colaboração em equipe</li>
+                        <li>✅ Integração com CI/CD</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
+    <!-- Instalação -->
+    <section id="instalacao" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">⚙️ Instalação</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>🖥️ Git</h3>
+                    <ol>
+                        <li>Acesse <a href="https://git-scm.com" target="_blank">git-scm.com</a></li>
+                        <li>Baixe a versão para seu sistema</li>
+                        <li>Execute o instalador</li>
+                        <li>Deixe as opções padrão</li>
+                        <li>Verifique: <code>git --version</code></li>
+                    </ol>
+                </div>
+                <div class="card">
+                    <h3>📁 Git Desktop</h3>
+                    <ol>
+                        <li>Acesse <a href="https://desktop.github.com" target="_blank">desktop.github.com</a></li>
+                        <li>Baixe e instale</li>
+                        <li>Faça login com sua conta GitHub</li>
+                        <li>Clone ou crie repositórios</li>
+                        <li>Interface amigável para iniciantes</li>
+                    </ol>
+                </div>
+                <div class="card">
+                    <h3>🌐 GitHub Online</h3>
+                    <ol>
+                        <li>Acesse <a href="https://github.com" target="_blank">github.com</a></li>
+                        <li>Crie uma conta gratuita</li>
+                        <li>Verifique seu e-mail</li>
+                        <li>Crie seu primeiro repositório</li>
+                        <li>Explore a interface</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Online para PC -->
+    <section id="github-online" class="section">
+        <div class="container">
+            <h2 class="section-title">⬇️ Do GitHub Online para o PC</h2>
+            <div class="steps">
+                <div class="step-card">
+                    <span class="step-number">1</span>
+                    <h3>Crie um repositório no GitHub</h3>
+                    <p>Clique em <strong>"New"</strong>, dê um nome e marque <strong>"Add a README"</strong></p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">2</span>
+                    <h3>Clone o repositório</h3>
+                    <p>Copie a URL do repositório (HTTPS ou SSH)</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">3</span>
+                    <h3>Clone via terminal</h3>
+                    <p><code>git clone https://github.com/seu-usuario/repo.git</code></p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">4</span>
+                    <h3>Ou use o Git Desktop</h3>
+                    <p>Clique em <strong>"Clone a repository"</strong> e cole a URL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VS Code para GitHub -->
+    <section id="vscode" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">📤 Do VS Code para o GitHub Online</h2>
+            <div class="steps">
+                <div class="step-card">
+                    <span class="step-number">1</span>
+                    <h3>Crie um projeto no VS Code</h3>
+                    <p>Abra sua pasta de projeto e comece a codar!</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">2</span>
+                    <h3>Inicialize o Git</h3>
+                    <p><code>git init</code> no terminal do VS Code</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">3</span>
+                    <h3>Adicione e comite</h3>
+                    <p><code>git add .</code> e <code>git commit -m "Primeiro commit"</code></p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">4</span>
+                    <h3>Conecte ao GitHub</h3>
+                    <p>
+                        <code>git remote add origin https://github.com/seu-usuario/repo.git</code><br/>
+                        <code>git push -u origin main</code>
+                    </p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">5</span>
+                    <h3>Publique no GitHub</h3>
+                    <p>Seu código já está no GitHub. Ative o <strong>GitHub Pages</strong> nas configurações do repositório para publicar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
     <section class="cta">
         <div class="container">
-            <h2>Pronto para decolar?</h2>
-            <p>Junte-se a milhares de usuários que já estão transformando suas ideias.</p>
-            <a href="#" class="btn-secondary">Quero começar</a>
+            <h2>🚀 Pronto para versionar seus projetos?</h2>
+            <p>Comece agora mesmo e nunca mais perca o controle do seu código!</p>
+            <a href="https://github.com" target="_blank" class="btn-secondary">Acesse o GitHub</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 MinhaLand. Todos os direitos reservados.</p>
+            <p>&copy; 2026 GitMaster - Curso Prático de Git e GitHub</p>
             <p>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Termos de Uso</a>
-                <a href="#">Suporte</a>
+                <a href="#definicoes">Definições</a>
+                <a href="#instalacao">Instalação</a>
+                <a href="#github-online">GitHub Online</a>
+                <a href="#vscode">VS Code</a>
             </p>
         </div>
     </footer>
