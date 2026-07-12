@@ -1,12 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Collab Class</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Simples</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #4f46e5;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            margin-left: 28px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #4f46e5;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: #111827;
+        }
+
+        .hero h1 span {
+            color: #4f46e5;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: #4f46e5;
+            color: #fff;
+            padding: 14px 40px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+        }
+
+        .btn-primary:hover {
+            background-color: #4338ca;
+            transform: translateY(-2px);
+        }
+
+        /* Features */
+        .features {
+            padding: 60px 0 80px;
+            background-color: #ffffff;
+        }
+
+        .features .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        .feature-icon {
+            font-size: 2.8rem;
+            margin-bottom: 12px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            color: #1f2937;
+        }
+
+        .feature-item p {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        /* CTA */
+        .cta {
+            background-color: #4f46e5;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 28px;
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            background-color: #fff;
+            color: #4f46e5;
+            padding: 14px 44px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-secondary:hover {
+            background-color: #f3f4f6;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111827;
+            color: #9ca3af;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #9ca3af;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* Responsivo */
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .nav-links a {
+                margin-left: 16px;
+                font-size: 0.9rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .cta h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>Testando nosso site</p>
-    <p>Site Collab Class</p>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">MinhaLand</div>
+            <div class="nav-links">
+                <a href="#">Início</a>
+                <a href="#">Recursos</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transforme seu <span>futuro</span> agora</h1>
+            <p>
+                Crie uma presença online poderosa com nossa plataforma
+                intuitiva. Comece a construir sua jornada hoje mesmo.
+            </p>
+            <a href="#" class="btn-primary">Começar agora</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-item">
+                <div class="feature-icon">🚀</div>
+                <h3>Rápido e leve</h3>
+                <p>Carregamento otimizado para uma experiência fluida em qualquer dispositivo.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🎨</div>
+                <h3>Design moderno</h3>
+                <p>Layouts pensados para causar uma ótima primeira impressão.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔒</div>
+                <h3>Seguro e confiável</h3>
+                <p>Proteção de dados e estabilidade para você e seus clientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Pronto para decolar?</h2>
+            <p>Junte-se a milhares de usuários que já estão transformando suas ideias.</p>
+            <a href="#" class="btn-secondary">Quero começar</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MinhaLand. Todos os direitos reservados.</p>
+            <p>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Suporte</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
