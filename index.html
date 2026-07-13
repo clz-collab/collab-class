@@ -285,9 +285,14 @@
                 <div class="step-terminal">
                     <span class="step-number">1</span>
                     <div>
-                        <h3>Abra o terminal na pasta do projeto</h3>
-                        <p><strong>Windows:</strong> Navegue até a pasta, clique na barra de endereços, digite <code>cmd</code> e pressione Enter</p>
-                        <p><strong>Mac/Linux:</strong> Abra o terminal e navegue com <code>cd caminho/da/pasta</code></p>
+                        <h3>Navegue até a pasta do projeto</h3>
+                        <div class="code-block">
+                            <code>cd caminho/para/sua/pasta</code>
+                        </div>
+                        <p>Use o comando <code>cd</code> (change directory) para entrar na pasta do seu projeto</p>
+                        <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            💡 No Windows: clique na barra de endereços da pasta, digite <code>cmd</code> e pressione Enter
+                        </p>
                     </div>
                 </div>
 
@@ -307,13 +312,13 @@
                 <div class="step-terminal">
                     <span class="step-number">3</span>
                     <div>
-                        <h3>Adicione os arquivos ao staging</h3>
+                        <h3>Verifique o status dos arquivos</h3>
                         <div class="code-block">
-                            <code>git add .</code>
+                            <code>git status</code>
                         </div>
-                        <p>O <code>.</code> adiciona todos os arquivos da pasta</p>
+                        <p>Mostra quais arquivos foram modificados, adicionados ou estão prontos para commit</p>
                         <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
-                            💡 Use <code>git add nome-do-arquivo</code> para adicionar apenas um arquivo específico
+                            💡 Os arquivos em vermelho ainda não foram adicionados ao staging
                         </p>
                     </div>
                 </div>
@@ -322,11 +327,14 @@
                 <div class="step-terminal">
                     <span class="step-number">4</span>
                     <div>
-                        <h3>Crie o primeiro commit</h3>
+                        <h3>Adicione todos os arquivos ao staging</h3>
                         <div class="code-block">
-                            <code>git commit -m "Primeiro commit"</code>
+                            <code>git add .</code>
                         </div>
-                        <p>O <code>-m</code> significa "message" (mensagem). Sempre use mensagens descritivas!</p>
+                        <p>O <code>.</code> adiciona todos os arquivos da pasta à área de preparação (staging)</p>
+                        <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            💡 Use <code>git add nome-do-arquivo</code> para adicionar apenas um arquivo específico
+                        </p>
                     </div>
                 </div>
 
@@ -334,16 +342,11 @@
                 <div class="step-terminal">
                     <span class="step-number">5</span>
                     <div>
-                        <h3>Crie um repositório no GitHub Web</h3>
-                        <p>Acesse <a href="https://github.com/new" target="_blank">github.com/new</a></p>
-                        <ul style="color: #475569; font-size: 0.95rem; padding-left: 20px; margin-top: 4px;">
-                            <li>Dê um nome para o repositório</li>
-                            <li><strong>NÃO</strong> marque "Add a README" (deixe vazio)</li>
-                            <li>Clique em <strong>"Create repository"</strong></li>
-                        </ul>
-                        <p style="font-size: 0.85rem; color: #ef4444; margin-top: 4px;">
-                            ⚠️ Importante: Deixe o repositório vazio para evitar conflitos!
-                        </p>
+                        <h3>Crie o commit inicial</h3>
+                        <div class="code-block">
+                            <code>git commit -m "Commit Inicial"</code>
+                        </div>
+                        <p>O <code>-m</code> significa "message" (mensagem). Use mensagens descritivas!</p>
                     </div>
                 </div>
 
@@ -351,10 +354,13 @@
                 <div class="step-terminal">
                     <span class="step-number">6</span>
                     <div>
-                        <h3>Copie a URL do repositório</h3>
-                        <p>No GitHub, copie a URL do repositório (HTTPS ou SSH)</p>
+                        <h3>Renomeie o branch para main</h3>
+                        <div class="code-block">
+                            <code>git branch -M main</code>
+                        </div>
+                        <p>O <code>-M</code> renomeia o branch atual (normalmente <code>master</code>) para <code>main</code></p>
                         <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
-                            💡 A URL fica assim: <code>https://github.com/seu-usuario/nome-do-repo.git</code>
+                            💡 O GitHub usa <code>main</code> como branch padrão atualmente
                         </p>
                     </div>
                 </div>
@@ -363,11 +369,14 @@
                 <div class="step-terminal">
                     <span class="step-number">7</span>
                     <div>
-                        <h3>Conecte o repositório local ao remoto</h3>
+                        <h3>Conecte ao repositório remoto</h3>
                         <div class="code-block">
-                            <code>git remote add origin https://github.com/seu-usuario/nome-do-repo.git</code>
+                            <code>git remote add origin https://github.com/clz-collab/collab-class.git</code>
                         </div>
-                        <p>Substitua <code>seu-usuario</code> e <code>nome-do-repo</code> pelos seus dados</p>
+                        <p>Conecta o repositório local ao repositório remoto no GitHub</p>
+                        <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            ⚠️ Substitua a URL pela URL do <strong>seu</strong> repositório!
+                        </p>
                     </div>
                 </div>
 
@@ -379,50 +388,49 @@
                         <div class="code-block">
                             <code>git push -u origin main</code>
                         </div>
-                        <p>O <code>-u</code> define o branch padrão</p>
+                        <p>O <code>-u</code> define o branch padrão (<code>main</code>) e envia os commits para o GitHub</p>
                         <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
-                            💡 Se der erro, tente <code>git push -u origin master</code> (dependendo da versão do Git)
+                            💡 Após o primeiro push, use apenas <code>git push</code> nos próximos envios
                         </p>
-                    </div>
-                </div>
-
-                <!-- Passo 9 -->
-                <div class="step-terminal">
-                    <span class="step-number">9</span>
-                    <div>
-                        <h3>Verifique no GitHub Web</h3>
-                        <p>Atualize a página do repositório no GitHub. Seus arquivos já estarão lá! 🎉</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Comandos rápidos -->
+            <!-- Resumo dos comandos -->
             <div class="quick-commands">
-                <h3 style="text-align: center; margin-bottom: 20px;">📋 Comandos Git essenciais</h3>
+                <h3 style="text-align: center; margin-bottom: 20px;">📋 Resumo dos comandos</h3>
                 <div class="commands-grid">
+                    <div class="command-item">
+                        <code>cd pasta</code>
+                        <span>Navega até a pasta do projeto</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git init</code>
+                        <span>Inicializa o repositório Git</span>
+                    </div>
                     <div class="command-item">
                         <code>git status</code>
                         <span>Verifica o status dos arquivos</span>
                     </div>
                     <div class="command-item">
-                        <code>git log</code>
-                        <span>Mostra o histórico de commits</span>
+                        <code>git add .</code>
+                        <span>Adiciona todos os arquivos ao staging</span>
                     </div>
                     <div class="command-item">
-                        <code>git branch</code>
-                        <span>Lista os branches existentes</span>
+                        <code>git commit -m "mensagem"</code>
+                        <span>Cria um commit com mensagem</span>
                     </div>
                     <div class="command-item">
-                        <code>git checkout -b novo-branch</code>
-                        <span>Cria e muda para um novo branch</span>
+                        <code>git branch -M main</code>
+                        <span>Renomeia o branch para main</span>
                     </div>
                     <div class="command-item">
-                        <code>git pull</code>
-                        <span>Baixa atualizações do repositório remoto</span>
+                        <code>git remote add origin URL</code>
+                        <span>Conecta ao repositório remoto</span>
                     </div>
                     <div class="command-item">
-                        <code>git clone URL</code>
-                        <span>Clona um repositório existente</span>
+                        <code>git push -u origin main</code>
+                        <span>Envia os commits para o GitHub</span>
                     </div>
                 </div>
             </div>
