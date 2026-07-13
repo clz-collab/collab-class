@@ -94,7 +94,7 @@ header .container {
     margin: 0 auto 32px;
 }
 
-/* Botão primário - usado em todos os botões */
+/* Botão primário */
 .btn-primary {
     display: inline-block;
     background: linear-gradient(135deg, #2563eb, #7c3aed);
