@@ -17,6 +17,7 @@
                 <a href="#instalacao">Instalação</a>
                 <a href="#github-web">GitHub Web</a>
                 <a href="#vscode">VS Code</a>
+                <a href="#cmd">CMD/Terminal</a>
             </div>
         </div>
     </header>
@@ -173,6 +174,118 @@
         </div>
     </section>
 
+    <!-- Envio via CMD/Terminal -->
+    <section id="cmd" class="section">
+        <div class="container">
+            <h2 class="section-title">💻 Enviar para o GitHub via CMD/Terminal</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: #475569;">
+                Passo a passo completo para enviar seus projetos do computador para o GitHub 
+                usando apenas o terminal (CMD, PowerShell, Bash ou qualquer outro).
+            </p>
+            
+            <div class="steps-terminal">
+                <div class="step-terminal">
+                    <span class="step-number">1</span>
+                    <h3>Abra o terminal na pasta do projeto</h3>
+                    <p>No Windows: <strong>Shift + Botão Direito</strong> → "Abrir PowerShell/CMD aqui"</p>
+                    <p>No Mac/Linux: <strong>Ctrl + Alt + T</strong> e navegue até a pasta com <code>cd caminho/da/pasta</code></p>
+                </div>
+
+                <div class="step-terminal">
+                    <span class="step-number">2</span>
+                    <h3>Inicialize o repositório Git</h3>
+                    <div class="code-block">
+                        <code>git init</code>
+                    </div>
+                    <p>Isso cria uma pasta oculta <code>.git</code> que versiona seu projeto</p>
+                </div>
+
+                <div class="step-terminal">
+                    <span class="step-number">3</span>
+                    <h3>Adicione os arquivos ao staging</h3>
+                    <div class="code-block">
+                        <code>git add .</code>
+                    </div>
+                    <p>O <code>.</code> adiciona todos os arquivos. Use <code>git add nome-do-arquivo</code> para adicionar apenas um</p>
+                </div>
+
+                <div class="step-terminal">
+                    <span class="step-number">4</span>
+                    <h3>Crie o primeiro commit</h3>
+                    <div class="code-block">
+                        <code>git commit -m "Primeiro commit"</code>
+                    </div>
+                    <p>O <code>-m</code> significa "message" (mensagem). Sempre use mensagens descritivas!</p>
+                </div>
+
+                <div class="step-terminal">
+                    <span class="step-number">5</span>
+                    <h3>Crie um repositório no GitHub Web</h3>
+                    <p>Acesse <a href="https://github.com/new" target="_blank">github.com/new</a>, dê um nome e <strong>NÃO</strong> marque "Add a README"</p>
+                    <p style="font-size: 0.9rem; color: #ef4444;">⚠️ Importante: Deixe o repositório vazio para evitar conflitos!</p>
+                </div>
+
+                <div class="step-terminal">
+                    <span class="step-number">6</span>
+                    <h3>Conecte o repositório local ao remoto</h3>
+                    <div class="code-block">
+                        <code>git remote add origin https://github.com/seu-usuario/nome-do-repo.git</code>
+                    </div>
+                    <p>Substitua <code>seu-usuario</code> e <code>nome-do-repo</code> pelos seus dados</p>
+                </div>
+
+                <div class="step-terminal">
+                    <span class="step-number">7</span>
+                    <h3>Envie (push) para o GitHub</h3>
+                    <div class="code-block">
+                        <code>git push -u origin main</code>
+                    </div>
+                    <p>
+                        O <code>-u</code> define o branch padrão. Se der erro, tente <code>git push -u origin master</code>
+                        (dependendo da versão do Git)
+                    </p>
+                </div>
+
+                <div class="step-terminal">
+                    <span class="step-number">8</span>
+                    <h3>Verifique no GitHub Web</h3>
+                    <p>Atualize a página do repositório no GitHub. Seus arquivos já estarão lá! 🎉</p>
+                </div>
+            </div>
+
+            <!-- Comandos rápidos -->
+            <div class="quick-commands">
+                <h3 style="text-align: center; margin-bottom: 20px;">📋 Comandos Git essenciais</h3>
+                <div class="commands-grid">
+                    <div class="command-item">
+                        <code>git status</code>
+                        <span>Verifica o status dos arquivos</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git log</code>
+                        <span>Mostra o histórico de commits</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git branch</code>
+                        <span>Lista os branches existentes</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git checkout -b novo-branch</code>
+                        <span>Cria e muda para um novo branch</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git pull</code>
+                        <span>Baixa atualizações do repositório remoto</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git clone URL</code>
+                        <span>Clona um repositório existente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Final -->
     <section class="cta">
         <div class="container">
@@ -191,6 +304,7 @@
                 <a href="#instalacao">Instalação</a>
                 <a href="#github-web">GitHub Web</a>
                 <a href="#vscode">VS Code</a>
+                <a href="#cmd">CMD/Terminal</a>
             </p>
         </div>
     </footer>
