@@ -276,77 +276,86 @@
         <div class="container">
             <h2 class="section-title">💻 Enviar para o GitHub via CMD/Terminal</h2>
             <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: #475569;">
-                Passo a passo completo para enviar seus projetos do computador para o GitHub 
-                usando apenas o terminal (CMD, PowerShell, Bash ou qualquer outro).
+                Comandos essenciais para enviar seus projetos do computador para o GitHub usando o terminal.
             </p>
             
             <div class="steps-terminal">
                 <div class="step-terminal">
                     <span class="step-number">1</span>
-                    <h3>Abra o terminal na pasta do projeto</h3>
-                    <p>No Windows: <strong>Shift + Botão Direito</strong> → "Abrir PowerShell/CMD aqui"</p>
-                    <p>No Mac/Linux: <strong>Ctrl + Alt + T</strong> e navegue até a pasta com <code>cd caminho/da/pasta</code></p>
+                    <div>
+                        <h3>git init</h3>
+                        <div class="code-block">
+                            <code>git init</code>
+                        </div>
+                        <p>Inicializa um repositório Git na pasta atual</p>
+                    </div>
                 </div>
 
                 <div class="step-terminal">
                     <span class="step-number">2</span>
-                    <h3>Inicialize o repositório Git</h3>
-                    <div class="code-block">
-                        <code>git init</code>
+                    <div>
+                        <h3>git add</h3>
+                        <div class="code-block">
+                            <code>git add .</code>
+                        </div>
+                        <p>Adiciona todos os arquivos da pasta ao staging (área de preparação)</p>
+                        <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            💡 Use <code>git add nome-do-arquivo</code> para adicionar apenas um arquivo específico
+                        </p>
                     </div>
-                    <p>Isso cria uma pasta oculta <code>.git</code> que versiona seu projeto</p>
                 </div>
 
                 <div class="step-terminal">
                     <span class="step-number">3</span>
-                    <h3>Adicione os arquivos ao staging</h3>
-                    <div class="code-block">
-                        <code>git add .</code>
+                    <div>
+                        <h3>git commit</h3>
+                        <div class="code-block">
+                            <code>git commit -m "Primeiro commit"</code>
+                        </div>
+                        <p>Cria um commit com uma mensagem descritiva sobre as alterações</p>
                     </div>
-                    <p>O <code>.</code> adiciona todos os arquivos. Use <code>git add nome-do-arquivo</code> para adicionar apenas um</p>
                 </div>
 
                 <div class="step-terminal">
                     <span class="step-number">4</span>
-                    <h3>Crie o primeiro commit</h3>
-                    <div class="code-block">
-                        <code>git commit -m "Primeiro commit"</code>
+                    <div>
+                        <h3>git remote add origin</h3>
+                        <div class="code-block">
+                            <code>git remote add origin https://github.com/seu-usuario/nome-do-repo.git</code>
+                        </div>
+                        <p>Conecta o repositório local ao repositório remoto no GitHub</p>
+                        <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            ⚠️ Substitua <code>seu-usuario</code> e <code>nome-do-repo</code> pelos seus dados
+                        </p>
                     </div>
-                    <p>O <code>-m</code> significa "message" (mensagem). Sempre use mensagens descritivas!</p>
                 </div>
 
                 <div class="step-terminal">
                     <span class="step-number">5</span>
-                    <h3>Crie um repositório no GitHub Web</h3>
-                    <p>Acesse <a href="https://github.com/new" target="_blank">github.com/new</a>, dê um nome e <strong>NÃO</strong> marque "Add a README"</p>
-                    <p style="font-size: 0.9rem; color: #ef4444;">⚠️ Importante: Deixe o repositório vazio para evitar conflitos!</p>
+                    <div>
+                        <h3>git push</h3>
+                        <div class="code-block">
+                            <code>git push -u origin main</code>
+                        </div>
+                        <p>Envia os commits para o repositório remoto no GitHub</p>
+                        <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            💡 O <code>-u</code> define o branch padrão. Se der erro, tente <code>git push -u origin master</code>
+                        </p>
+                    </div>
                 </div>
 
                 <div class="step-terminal">
                     <span class="step-number">6</span>
-                    <h3>Conecte o repositório local ao remoto</h3>
-                    <div class="code-block">
-                        <code>git remote add origin https://github.com/seu-usuario/nome-do-repo.git</code>
+                    <div>
+                        <h3>git clone</h3>
+                        <div class="code-block">
+                            <code>git clone https://github.com/seu-usuario/nome-do-repo.git</code>
+                        </div>
+                        <p>Clona um repositório remoto para sua máquina local</p>
+                        <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            💡 Útil para baixar projetos existentes do GitHub
+                        </p>
                     </div>
-                    <p>Substitua <code>seu-usuario</code> e <code>nome-do-repo</code> pelos seus dados</p>
-                </div>
-
-                <div class="step-terminal">
-                    <span class="step-number">7</span>
-                    <h3>Envie (push) para o GitHub</h3>
-                    <div class="code-block">
-                        <code>git push -u origin main</code>
-                    </div>
-                    <p>
-                        O <code>-u</code> define o branch padrão. Se der erro, tente <code>git push -u origin master</code>
-                        (dependendo da versão do Git)
-                    </p>
-                </div>
-
-                <div class="step-terminal">
-                    <span class="step-number">8</span>
-                    <h3>Verifique no GitHub Web</h3>
-                    <p>Atualize a página do repositório no GitHub. Seus arquivos já estarão lá! 🎉</p>
                 </div>
             </div>
 
@@ -375,8 +384,8 @@
                         <span>Baixa atualizações do repositório remoto</span>
                     </div>
                     <div class="command-item">
-                        <code>git clone URL</code>
-                        <span>Clona um repositório existente</span>
+                        <code>git remote -v</code>
+                        <span>Lista os repositórios remotos configurados</span>
                     </div>
                 </div>
             </div>
