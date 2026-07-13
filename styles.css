@@ -177,7 +177,7 @@ header .container {
 }
 
 .card ul li, .card ol li {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .card a {
@@ -200,7 +200,7 @@ header .container {
 /* Steps */
 .steps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 24px;
 }
 
@@ -356,5 +356,10 @@ footer a:hover {
 
     .section {
         padding: 40px 0;
+    }
+
+    .nav-links a {
+        margin-left: 10px;
+        font-size: 0.75rem;
     }
 }
