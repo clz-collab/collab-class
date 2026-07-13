@@ -22,7 +22,9 @@ body {
     padding: 0 24px;
 }
 
-/* Header */
+/* ============================================
+   HEADER
+   ============================================ */
 header {
     background-color: #ffffff;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
@@ -65,7 +67,9 @@ header .container {
     color: #2563eb;
 }
 
-/* Hero */
+/* ============================================
+   HERO
+   ============================================ */
 .hero {
     padding: 80px 0 60px;
     text-align: center;
@@ -94,7 +98,9 @@ header .container {
     margin: 0 auto 32px;
 }
 
-/* Botão primário */
+/* ============================================
+   BOTÕES
+   ============================================ */
 .btn-primary {
     display: inline-block;
     background: linear-gradient(135deg, #2563eb, #7c3aed);
@@ -119,7 +125,6 @@ header .container {
     transform: scale(0.98);
 }
 
-/* Botão secundário (CTA) */
 .btn-secondary {
     display: inline-block;
     background: #ffffff;
@@ -137,7 +142,9 @@ header .container {
     box-shadow: 0 8px 30px rgba(255, 255, 255, 0.20);
 }
 
-/* Sections */
+/* ============================================
+   SEÇÕES
+   ============================================ */
 .section {
     padding: 70px 0;
 }
@@ -164,7 +171,9 @@ header .container {
     border-radius: 2px;
 }
 
-/* Grids */
+/* ============================================
+   GRIDS
+   ============================================ */
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -177,7 +186,9 @@ header .container {
     gap: 32px;
 }
 
-/* Cards */
+/* ============================================
+   CARDS
+   ============================================ */
 .card {
     background: #ffffff;
     border-radius: 16px;
@@ -229,7 +240,9 @@ header .container {
     color: #0f172a;
 }
 
-/* Steps (cards de passos) */
+/* ============================================
+   STEPS (cards de passos)
+   ============================================ */
 .steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -284,7 +297,9 @@ header .container {
     word-break: break-all;
 }
 
-/* Steps Terminal (seção CMD) */
+/* ============================================
+   STEPS TERMINAL (seção CMD - passo a passo)
+   ============================================ */
 .steps-terminal {
     display: flex;
     flex-direction: column;
@@ -326,6 +341,17 @@ header .container {
     margin-bottom: 4px;
 }
 
+.step-terminal ul {
+    color: #475569;
+    font-size: 0.95rem;
+    padding-left: 20px;
+    margin-top: 4px;
+}
+
+.step-terminal ul li {
+    margin-bottom: 2px;
+}
+
 .code-block {
     background: #0f172a;
     color: #e2e8f0;
@@ -343,7 +369,9 @@ header .container {
     font-size: 0.95rem;
 }
 
-/* Quick Commands (comandos rápidos) */
+/* ============================================
+   QUICK COMMANDS (comandos rápidos)
+   ============================================ */
 .quick-commands {
     margin-top: 60px;
     background: #ffffff;
@@ -384,7 +412,9 @@ header .container {
     font-size: 0.9rem;
 }
 
-/* CTA (Call to Action) */
+/* ============================================
+   CTA (Call to Action)
+   ============================================ */
 .cta {
     background: linear-gradient(135deg, #0f172a, #1e293b);
     color: #fff;
@@ -403,7 +433,9 @@ header .container {
     margin-bottom: 28px;
 }
 
-/* Footer */
+/* ============================================
+   FOOTER
+   ============================================ */
 footer {
     background-color: #0f172a;
     color: #94a3b8;
@@ -466,6 +498,10 @@ footer a:hover {
         padding: 24px 20px;
     }
 
+    .step-terminal ul {
+        text-align: left;
+    }
+
     .commands-grid {
         grid-template-columns: 1fr;
     }
@@ -508,6 +544,10 @@ footer a:hover {
         padding: 8px 12px;
     }
 
+    .code-block code {
+        font-size: 0.8rem;
+    }
+
     .btn-primary {
         font-size: 0.85rem;
         padding: 12px 20px;
@@ -515,5 +555,17 @@ footer a:hover {
 
     .step-terminal {
         padding: 16px;
+    }
+
+    .step-terminal h3 {
+        font-size: 1rem;
+    }
+
+    .step-terminal p {
+        font-size: 0.85rem;
+    }
+
+    .command-item code {
+        font-size: 0.8rem;
     }
 }
