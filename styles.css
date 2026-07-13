@@ -516,4 +516,56 @@ footer a:hover {
 
     .btn-primary {
         font-size: 0.95rem;
-        padding: 
+        padding: 14px 28px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 50px 0 40px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .nav-links a {
+        margin-left: 6px;
+        font-size: 0.7rem;
+    }
+
+    .code-block {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .code-block code {
+        font-size: 0.8rem;
+    }
+
+    .btn-primary {
+        font-size: 0.85rem;
+        padding: 12px 20px;
+    }
+
+    .step-terminal {
+        padding: 16px;
+    }
+
+    .step-terminal h3 {
+        font-size: 1rem;
+    }
+
+    .step-terminal p {
+        font-size: 0.85rem;
+    }
+
+    .command-item code {
+        font-size: 0.8rem;
+    }
+}

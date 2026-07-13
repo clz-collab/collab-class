@@ -308,9 +308,27 @@
                     </div>
                 </div>
 
-                <!-- Passo 3 -->
+                <!-- Passo 3 - Configurar usuário -->
                 <div class="step-terminal">
                     <span class="step-number">3</span>
+                    <div>
+                        <h3>Configure sua identidade</h3>
+                        <div class="code-block">
+                            <code>git config user.name "Seu Nome"</code>
+                        </div>
+                        <div class="code-block" style="margin-top: 4px;">
+                            <code>git config user.email "seu-email@exemplo.com"</code>
+                        </div>
+                        <p>Define seu nome e e-mail para os commits <strong>apenas neste projeto</strong></p>
+                        <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            💡 Use <code>git config --global</code> para definir para todos os projetos
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Passo 4 -->
+                <div class="step-terminal">
+                    <span class="step-number">4</span>
                     <div>
                         <h3>Verifique o status dos arquivos</h3>
                         <div class="code-block">
@@ -323,9 +341,9 @@
                     </div>
                 </div>
 
-                <!-- Passo 4 -->
+                <!-- Passo 5 -->
                 <div class="step-terminal">
-                    <span class="step-number">4</span>
+                    <span class="step-number">5</span>
                     <div>
                         <h3>Adicione todos os arquivos ao staging</h3>
                         <div class="code-block">
@@ -338,21 +356,24 @@
                     </div>
                 </div>
 
-                <!-- Passo 5 -->
+                <!-- Passo 6 -->
                 <div class="step-terminal">
-                    <span class="step-number">5</span>
+                    <span class="step-number">6</span>
                     <div>
                         <h3>Crie o commit inicial</h3>
                         <div class="code-block">
                             <code>git commit -m "Commit Inicial"</code>
                         </div>
                         <p>O <code>-m</code> significa "message" (mensagem). Use mensagens descritivas!</p>
+                        <p style="font-size: 0.85rem; color: #ef4444; margin-top: 4px;">
+                            ⚠️ Se não configurou nome e e-mail, o Git vai pedir! Volte ao passo 3.
+                        </p>
                     </div>
                 </div>
 
-                <!-- Passo 6 -->
+                <!-- Passo 7 -->
                 <div class="step-terminal">
-                    <span class="step-number">6</span>
+                    <span class="step-number">7</span>
                     <div>
                         <h3>Renomeie o branch para main</h3>
                         <div class="code-block">
@@ -365,9 +386,9 @@
                     </div>
                 </div>
 
-                <!-- Passo 7 -->
+                <!-- Passo 8 -->
                 <div class="step-terminal">
-                    <span class="step-number">7</span>
+                    <span class="step-number">8</span>
                     <div>
                         <h3>Conecte ao repositório remoto</h3>
                         <div class="code-block">
@@ -380,9 +401,9 @@
                     </div>
                 </div>
 
-                <!-- Passo 8 -->
+                <!-- Passo 9 -->
                 <div class="step-terminal">
-                    <span class="step-number">8</span>
+                    <span class="step-number">9</span>
                     <div>
                         <h3>Envie (push) para o GitHub</h3>
                         <div class="code-block">
@@ -407,6 +428,14 @@
                     <div class="command-item">
                         <code>git init</code>
                         <span>Inicializa o repositório Git</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config user.name "Nome"</code>
+                        <span>Configura seu nome para commits</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config user.email "email"</code>
+                        <span>Configura seu e-mail para commits</span>
                     </div>
                     <div class="command-item">
                         <code>git status</code>
