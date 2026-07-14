@@ -12,12 +12,7 @@
     <header>
         <div class="container">
             <div class="logo">🚀 GitMaster</div>
-            <button class="menu-toggle" aria-label="Abrir menu">
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav-links">
+            <div class="nav-links">
                 <a href="#definicoes">Definições</a>
                 <a href="#instalacao">Instalação</a>
                 <a href="#personalize">Personalize</a>
@@ -26,7 +21,7 @@
                 <a href="#github-pages">GitHub Pages</a>
                 <a href="#cmd">CMD/Terminal</a>
                 <a href="#config">Configurações</a>
-            </nav>
+            </div>
         </div>
     </header>
 
@@ -528,6 +523,7 @@
             </p>
 
             <div class="steps-terminal">
+                <!-- Configurar identidade LOCAL -->
                 <div class="step-terminal">
                     <span class="step-number">1</span>
                     <div>
@@ -548,6 +544,7 @@
                     </div>
                 </div>
 
+                <!-- Verificar configurações -->
                 <div class="step-terminal">
                     <span class="step-number">2</span>
                     <div>
@@ -565,6 +562,7 @@
                     </div>
                 </div>
 
+                <!-- Remover configurações -->
                 <div class="step-terminal">
                     <span class="step-number">3</span>
                     <div>
@@ -579,6 +577,7 @@
                     </div>
                 </div>
 
+                <!-- Listar todas as configurações -->
                 <div class="step-terminal">
                     <span class="step-number">4</span>
                     <div>
@@ -594,6 +593,7 @@
                 </div>
             </div>
 
+            <!-- Tabela de comandos -->
             <div class="quick-commands">
                 <h3 style="text-align: center; margin-bottom: 20px;">📋 Resumo dos comandos de configuração</h3>
                 <div class="commands-grid">
@@ -639,6 +639,7 @@
                     </div>
                 </div>
 
+                <!-- Dica de segurança -->
                 <div style="margin-top: 40px; background: #fef3c7; border: 2px solid #f59e0b; border-radius: 16px; padding: 24px 32px; text-align: center;">
                     <p style="font-size: 1.1rem; color: #92400e; font-weight: 600;">
                         🛡️ <strong>Dica de segurança:</strong> Sempre use <code>--local</code> em computadores compartilhados 
@@ -673,23 +674,7 @@
                 <a href="#config">Configurações</a>
             </p>
         </div>
-    </footer>
-
-    <script>
-        // Menu mobile toggle
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            this.classList.toggle('active');
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.menu-toggle').classList.remove('active');
-                document.querySelector('.nav-links').classList.remove('active');
-            });
-        });
-    </script>
+    </footer> 
 
 </body>
 </html>
