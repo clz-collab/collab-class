@@ -20,6 +20,7 @@
                 <a href="#vscode">VS Code</a>
                 <a href="#github-pages">GitHub Pages</a>
                 <a href="#cmd">CMD/Terminal</a>
+                <a href="#config">Configurações</a>
             </div>
         </div>
     </header>
@@ -512,6 +513,146 @@
         </div>
     </section>
 
+    <!-- Configurações do Git -->
+    <section id="config" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">🔐 Configurações do Git</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: #475569;">
+                Comandos essenciais para configurar sua identidade no Git, 
+                especialmente em computadores compartilhados como os da escola.
+            </p>
+
+            <div class="steps-terminal">
+                <!-- Configurar identidade LOCAL -->
+                <div class="step-terminal">
+                    <span class="step-number">1</span>
+                    <div>
+                        <h3>Configurar identidade (local)</h3>
+                        <div class="code-block">
+                            <code>git config --local user.name "Seu Nome"</code>
+                        </div>
+                        <div class="code-block" style="margin-top: 4px;">
+                            <code>git config --local user.email "seu-email@email.com"</code>
+                        </div>
+                        <div class="code-block" style="margin-top: 4px;">
+                            <code>git config --local credential.helper manager</code>
+                        </div>
+                        <p>Configura nome, e-mail e cache de credenciais <strong>apenas para este projeto</strong></p>
+                        <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            ✅ Use <code>--local</code> em computadores compartilhados (escola, lan house, etc.)
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Verificar configurações -->
+                <div class="step-terminal">
+                    <span class="step-number">2</span>
+                    <div>
+                        <h3>Verificar configurações</h3>
+                        <div class="code-block">
+                            <code>git config --local user.name</code>
+                        </div>
+                        <div class="code-block" style="margin-top: 4px;">
+                            <code>git config --local user.email</code>
+                        </div>
+                        <p>Mostra o nome e e-mail configurados <strong>apenas para este projeto</strong></p>
+                        <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            💡 Se não mostrar nada, é porque não está configurado
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Remover configurações -->
+                <div class="step-terminal">
+                    <span class="step-number">3</span>
+                    <div>
+                        <h3>Remover configurações (local)</h3>
+                        <div class="code-block">
+                            <code>git config --unset user.name</code>
+                        </div>
+                        <div class="code-block" style="margin-top: 4px;">
+                            <code>git config --unset user.email</code>
+                        </div>
+                        <p>Remove as configurações <strong>apenas deste projeto</strong> (local)</p>
+                        <p style="font-size: 0.85rem; color: #ef4444; margin-top: 4px;">
+                            ⚠️ Use <strong>antes de desligar</strong> o computador da escola para garantir sua segurança!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Listar todas as configurações -->
+                <div class="step-terminal">
+                    <span class="step-number">4</span>
+                    <div>
+                        <h3>Listar todas as configurações</h3>
+                        <div class="code-block">
+                            <code>git config --list</code>
+                        </div>
+                        <p>Mostra <strong>todas</strong> as configurações do Git (locais + globais)</p>
+                        <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            💡 Use <code>git config --local --list</code> para ver apenas as locais
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela de comandos -->
+            <div class="quick-commands">
+                <h3 style="text-align: center; margin-bottom: 20px;">📋 Resumo dos comandos de configuração</h3>
+                <div class="commands-grid">
+                    <div class="command-item">
+                        <code>git config --local user.name "Nome"</code>
+                        <span>Configura nome local</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config --local user.email "email"</code>
+                        <span>Configura e-mail local</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config --local credential.helper manager</code>
+                        <span>Configura cache de credenciais local</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config --local user.name</code>
+                        <span>Verifica nome local</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config --local user.email</code>
+                        <span>Verifica e-mail local</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config --unset user.name</code>
+                        <span>Remove nome local</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config --unset user.email</code>
+                        <span>Remove e-mail local</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config --list</code>
+                        <span>Lista todas as configurações</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config --local --list</code>
+                        <span>Lista apenas configurações locais</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config --global --list</code>
+                        <span>Lista apenas configurações globais</span>
+                    </div>
+                </div>
+
+                <!-- Dica de segurança -->
+                <div style="margin-top: 40px; background: #fef3c7; border: 2px solid #f59e0b; border-radius: 16px; padding: 24px 32px; text-align: center;">
+                    <p style="font-size: 1.1rem; color: #92400e; font-weight: 600;">
+                        🛡️ <strong>Dica de segurança:</strong> Sempre use <code>--local</code> em computadores compartilhados 
+                        e remova as configurações ao finalizar!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Final -->
     <section class="cta">
         <div class="container">
@@ -533,6 +674,7 @@
                 <a href="#vscode">VS Code</a>
                 <a href="#github-pages">GitHub Pages</a>
                 <a href="#cmd">CMD/Terminal</a>
+                <a href="#config">Configurações</a>
             </p>
         </div>
     </footer>
