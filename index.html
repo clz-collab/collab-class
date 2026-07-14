@@ -21,6 +21,7 @@
                 <a href="#github-pages">GitHub Pages</a>
                 <a href="#cmd">CMD/Terminal</a>
                 <a href="#config">Configurações</a>
+                <a href="#resumo">Resumo</a>
             </div>
         </div>
     </header>
@@ -464,52 +465,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="quick-commands">
-                <h3 style="text-align: center; margin-bottom: 20px;">📋 Resumo dos comandos</h3>
-                <div class="commands-grid">
-                    <div class="command-item">
-                        <code>cd pasta</code>
-                        <span>Navega até a pasta do projeto</span>
-                    </div>
-                    <div class="command-item">
-                        <code>git init</code>
-                        <span>Inicializa o repositório Git</span>
-                    </div>
-                    <div class="command-item">
-                        <code>git config user.name "Nome"</code>
-                        <span>Configura seu nome para commits</span>
-                    </div>
-                    <div class="command-item">
-                        <code>git config user.email "email"</code>
-                        <span>Configura seu e-mail para commits</span>
-                    </div>
-                    <div class="command-item">
-                        <code>git status</code>
-                        <span>Verifica o status dos arquivos</span>
-                    </div>
-                    <div class="command-item">
-                        <code>git add .</code>
-                        <span>Adiciona todos os arquivos ao staging</span>
-                    </div>
-                    <div class="command-item">
-                        <code>git commit -m "mensagem"</code>
-                        <span>Cria um commit com mensagem</span>
-                    </div>
-                    <div class="command-item">
-                        <code>git branch -M main</code>
-                        <span>Renomeia o branch para main</span>
-                    </div>
-                    <div class="command-item">
-                        <code>git remote add origin URL</code>
-                        <span>Conecta ao repositório remoto</span>
-                    </div>
-                    <div class="command-item">
-                        <code>git push -u origin main</code>
-                        <span>Envia os commits para o GitHub</span>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -592,10 +547,65 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Tabela de comandos -->
+    <!-- Resumo de Comandos Git -->
+    <section id="resumo" class="section">
+        <div class="container">
+            <h2 class="section-title">📋 Todos os Comandos Git</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: #475569;">
+                Comandos essenciais para trabalhar com Git e GitHub, desde a configuração inicial até o envio de projetos.
+            </p>
+
             <div class="quick-commands">
-                <h3 style="text-align: center; margin-bottom: 20px;">📋 Resumo dos comandos de configuração</h3>
+                <h3 style="text-align: center; margin-bottom: 20px;">⚡ Comandos básicos</h3>
+                <div class="commands-grid">
+                    <div class="command-item">
+                        <code>git init</code>
+                        <span>Inicializa um repositório Git</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git status</code>
+                        <span>Verifica o status dos arquivos</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git add .</code>
+                        <span>Adiciona todos os arquivos ao staging</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git commit -m "mensagem"</code>
+                        <span>Cria um commit com mensagem</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git branch -M main</code>
+                        <span>Renomeia o branch para main</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git remote add origin URL</code>
+                        <span>Conecta ao repositório remoto</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git push -u origin main</code>
+                        <span>Envia os commits para o GitHub</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git clone URL</code>
+                        <span>Clona um repositório remoto</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git pull</code>
+                        <span>Baixa atualizações do repositório remoto</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git log</code>
+                        <span>Mostra o histórico de commits</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-commands" style="margin-top: 40px;">
+                <h3 style="text-align: center; margin-bottom: 20px;">🔐 Comandos de configuração</h3>
                 <div class="commands-grid">
                     <div class="command-item">
                         <code>git config --local user.name "Nome"</code>
@@ -608,6 +618,14 @@
                     <div class="command-item">
                         <code>git config --local credential.helper manager</code>
                         <span>Configura cache de credenciais local</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config --global user.name "Nome"</code>
+                        <span>Configura nome global</span>
+                    </div>
+                    <div class="command-item">
+                        <code>git config --global user.email "email"</code>
+                        <span>Configura e-mail global</span>
                     </div>
                     <div class="command-item">
                         <code>git config --local user.name</code>
@@ -631,21 +649,21 @@
                     </div>
                     <div class="command-item">
                         <code>git config --local --list</code>
-                        <span>Lista apenas configurações locais</span>
+                        <span>Lista configurações locais</span>
                     </div>
                     <div class="command-item">
                         <code>git config --global --list</code>
-                        <span>Lista apenas configurações globais</span>
+                        <span>Lista configurações globais</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Dica de segurança -->
-                <div style="margin-top: 40px; background: #fef3c7; border: 2px solid #f59e0b; border-radius: 16px; padding: 24px 32px; text-align: center;">
-                    <p style="font-size: 1.1rem; color: #92400e; font-weight: 600;">
-                        🛡️ <strong>Dica de segurança:</strong> Sempre use <code>--local</code> em computadores compartilhados 
-                        e remova as configurações ao finalizar!
-                    </p>
-                </div>
+            <!-- Dica de segurança -->
+            <div style="margin-top: 40px; background: #fef3c7; border: 2px solid #f59e0b; border-radius: 16px; padding: 24px 32px; text-align: center;">
+                <p style="font-size: 1.1rem; color: #92400e; font-weight: 600;">
+                    🛡️ <strong>Dica de segurança:</strong> Sempre use <code>--local</code> em computadores compartilhados 
+                    e remova as configurações ao finalizar!
+                </p>
             </div>
         </div>
     </section>
@@ -672,9 +690,10 @@
                 <a href="#github-pages">GitHub Pages</a>
                 <a href="#cmd">CMD/Terminal</a>
                 <a href="#config">Configurações</a>
+                <a href="#resumo">Resumo</a>
             </p>
         </div>
-    </footer> 
+    </footer>
 
 </body>
 </html>
