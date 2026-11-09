@@ -4,6 +4,7 @@ O dataset Breast Cancer Wisconsin (Diagnostic) é um conjunto de dados médico- 
 
 CÓDIGO 1:
 
+# importação de bibliotecas e funções
 import os                                                                       # Importa a biblioteca os para manipulação de caminhos e interação com o sistema de ficheiros
 import pandas as pd                                                             # Importa a biblioteca pandas para manipulação, limpeza e análise de dados tabulares (DataFrames)
 import matplotlib.pyplot as plt                                                 # Importa o módulo pyplot do matplotlib para criação de gráficos e visualizações estáticas
